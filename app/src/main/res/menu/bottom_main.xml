@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/ic_baseline_location_city_24"
+        android:id="@+id/city"
+        android:title="@string/city"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_sentiment_satisfied_alt_24"
+        android:id="@+id/smile"
+        android:title="@string/smile"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:id="@+id/account"
+        android:title="@string/account"
+        />
+</menu>
