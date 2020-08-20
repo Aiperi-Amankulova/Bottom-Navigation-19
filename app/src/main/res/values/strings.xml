@@ -11,4 +11,7 @@
     <string name="google">Google (2 years)</string>
     <string name="facebook">Facebook (8 months)</string>
     <string name="instagram">Instagram (3 years)</string>
+    <string name="education">Education</string>
+    <string name="skills">Skills</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry.r took a galley of type and scrambled it to make a type specimen book.</string>
 </resources>
