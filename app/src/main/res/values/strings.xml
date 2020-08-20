@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bottom Navigation</string>
+    <string name="city">City</string>
+    <string name="smile">Smile</string>
+    <string name="account">Account</string>
+    <string name="ivan_ivanov">Ivan Ivanov</string>
+    <string name="mobil_developer">Mobil Developer</string>
+    <string name="mob_0702565656">mob: 0702565656</string>
+    <string name="telegram_gstyagsj">telegram: @gstyagsj</string>
+    <string name="experience">Experience</string>
+    <string name="google">Google (2 years)</string>
+    <string name="facebook">Facebook (8 months)</string>
+    <string name="instagram">Instagram (3 years)</string>
+</resources>
