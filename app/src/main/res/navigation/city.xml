@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/city"
-    app:startDestination="@id/cityFragment2">
+    app:startDestination="@id/cityFragment">
 
     <fragment
-        android:id="@+id/cityFragment2"
+        android:id="@+id/cityFragment"
         android:name="com.example.bottomnavigation.Fragment.CityFragment"
         android:label="CityFragment" >
         <argument android:name="city" />
+        <action
+            android:id="@+id/city2"
+            app:destination="@id/cityFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
     </fragment>
 </navigation>
