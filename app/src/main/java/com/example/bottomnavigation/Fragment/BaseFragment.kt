@@ -6,15 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment: Fragment() {
 
-    protected abstract fun resID():Int
+abstract class BaseFragment : Fragment() {
+
+    protected  abstract  fun resID():Int
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(resID(), container, false)
+        val view = inflater.inflate(resID(),container,false)
+        return view
     }
 }
