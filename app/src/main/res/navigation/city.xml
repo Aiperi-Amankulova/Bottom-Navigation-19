@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/city"
+    app:startDestination="@id/cityFragment2">
+
+    <fragment
+        android:id="@+id/cityFragment2"
+        android:name="com.example.bottomnavigation.Fragment.CityFragment"
+        android:label="CityFragment" >
+        <argument android:name="city" />
+    </fragment>
+</navigation>

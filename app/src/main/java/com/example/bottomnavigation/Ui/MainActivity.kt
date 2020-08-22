@@ -1,15 +1,10 @@
-package com.example.bottomnavigation
+package com.example.bottomnavigation.Ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.navigation.ui.setupWithNavController
-import com.example.bottomnavigation.Fragment.AccountFragment
-import com.example.bottomnavigation.Fragment.CityFragment
-import com.example.bottomnavigation.Fragment.TabFragment
-import com.example.bottomnavigation.Fragment.ViewPagerAdapter
+import com.example.bottomnavigation.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

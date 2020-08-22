@@ -20,20 +20,18 @@ class CityFragment: BaseFragment() {
     private fun listOfCities() {
         val adapter = recyclerAdapter(this)
         recyclerview.adapter = adapter
-        adapter.addlist(DataClass("Washington", R.drawable.newyourk, getString(R.string.washington)))
-        adapter.addlist(DataClass("Astana",R.drawable.vancouver , getString(R.string.astana)))
+        adapter.addlist(DataClass("Washington", R.drawable.washington, getString(R.string.washington)))
+        adapter.addlist(DataClass("Astana",R.drawable.astana , getString(R.string.astana)))
         adapter.addlist(DataClass("Baku", R.drawable.berlin,getString(R.string.baku)))
-        adapter.addlist(DataClass("Bishkek",R.drawable.hanover,getString(R.string.bishkek)))
-        adapter.addlist(DataClass("Karalol",R.drawable.oslo, getString(R.string.karakol)))
-        adapter.addlist(DataClass("Berlin" ,R.drawable.cabowerde, getString(R.string.berlin) ))
-        adapter.addlist(DataClass("Athens" ,R.drawable.cabowerde, getString(R.string.athens) ))
-        adapter.addlist(DataClass("Bandung" ,R.drawable.cabowerde, getString(R.string.bandung) ))
+        adapter.addlist(DataClass("Bishkek",R.drawable.bishkek,getString(R.string.bishkek)))
+        adapter.addlist(DataClass("Karakol",R.drawable.karakol, getString(R.string.karakol)))
+        adapter.addlist(DataClass("Berlin" ,R.drawable.berlin, getString(R.string.berlin) ))
+        adapter.addlist(DataClass("Athens" ,R.drawable.athens, getString(R.string.athens) ))
+        adapter.addlist(DataClass("Bandung" ,R.drawable.bandung, getString(R.string.bandung) ))
     }
 
     override fun gotoTheDetails(data: DataClass) {
-
         val list = AlarmFragmentDirections.actionAlarmFragmentToCitysFragment(data)
         findNavController().navigate(list)
     }
-}
 }
