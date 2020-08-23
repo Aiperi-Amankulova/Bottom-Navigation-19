@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.bottomnavigation.Data.DataClass
 
 
 abstract class BaseFragment : Fragment() {
@@ -19,4 +20,5 @@ abstract class BaseFragment : Fragment() {
         val view = inflater.inflate(resID(),container,false)
         return view
     }
+
 }
