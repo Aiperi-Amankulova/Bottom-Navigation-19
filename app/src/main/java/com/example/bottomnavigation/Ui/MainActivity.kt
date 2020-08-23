@@ -21,14 +21,15 @@ class MainActivity : AppCompatActivity() {
             R.navigation.account)
 
         navView.run {
-
-            setupWithNavController(
-                    navGraphIds = navId,
-                    fragmentManager = supportFragmentManager,
-                    containerId = R.id.navV,
-                    intent = intent
-                )
+            setupWithNavController()
         }
+    }
 
+    private fun setupWithNavController() {
+        val navId = null
+        var navigation = navId,
+        fragmentManager = supportFragmentManager,
+        var containerId = R.id.navV,
+        intent = intent
     }
 }

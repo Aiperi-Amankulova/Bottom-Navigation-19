@@ -8,8 +8,6 @@ import kotlinx.android.synthetic.main.fragment_tab.*
 
 class TabFragment: BaseFragment() {
     override fun resID() = R.layout.fragment_tab
-    override fun newPage(data: DataClass) {
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
