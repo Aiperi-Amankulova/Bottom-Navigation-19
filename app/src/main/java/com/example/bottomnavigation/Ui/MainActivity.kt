@@ -26,10 +26,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupWithNavController() {
-        val navId = null
-        var navigation = navId,
+        navGraphIds = navId,
         fragmentManager = supportFragmentManager,
-        var containerId = R.id.navV,
+        containerId = R.id.navV,
         intent = intent
     }
 }

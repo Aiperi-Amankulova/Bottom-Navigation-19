@@ -29,8 +29,4 @@ class CityFragment: BaseFragment() {
         adapter.addingList(DataClass("Bandung" ,R.drawable.bandung, getString(R.string.bandung) ))
     }
 
-    override fun newPage(data: DataClass) {
-        val list = AlarmFragmentDirections.actionAlarmFragmentToCitysFragment(data)
-        findNavController().navigate(list)
-    }
 }
