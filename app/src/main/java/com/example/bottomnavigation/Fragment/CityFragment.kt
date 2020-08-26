@@ -2,10 +2,9 @@ package com.example.bottomnavigation.Fragment
 
 import android.os.Bundle
 import android.view.View
-import androidx.navigation.fragment.findNavController
 import com.example.bottomnavigation.Data.DataClass
 import com.example.bottomnavigation.R
-import com.example.bottomnavigation.Ui.recyclerAdapter
+import com.example.bottomnavigation.Ui.RecyclerAdapter
 import kotlinx.android.synthetic.main.city_recycler.*
 
 class CityFragment: BaseFragment() {
@@ -17,7 +16,7 @@ class CityFragment: BaseFragment() {
     }
 
     private fun listOfCities() {
-        val adapter = recyclerAdapter(this)
+        val adapter = RecyclerAdapter(this)
         recyclerview.adapter = adapter
         adapter.addingList(DataClass("Washington", R.drawable.washington, getString(R.string.washington)))
         adapter.addingList(DataClass("Astana",R.drawable.astana , getString(R.string.astana)))

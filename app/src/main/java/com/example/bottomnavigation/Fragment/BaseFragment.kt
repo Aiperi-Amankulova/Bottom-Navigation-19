@@ -9,7 +9,6 @@ import com.example.bottomnavigation.Data.DataClass
 
 
 abstract class BaseFragment : Fragment() {
-
     protected  abstract  fun resID():Int
 
     override fun onCreateView(

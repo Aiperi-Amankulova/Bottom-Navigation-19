@@ -14,21 +14,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun BottomNav() {
-        val navView = findViewById<BottomNavigationView>(R.id.btmNav)
-        val navId =  listOf(
-            R.navigation.city,
-            R.navigation.smile ,
-            R.navigation.account)
+        val navV = findViewById<BottomNavigationView>(R.id.btmNav)
+        val navId = listOf(R.navigation.city, R.navigation.smile, R.navigation.account)
 
-        navView.run {
-            setupWithNavController()
-        }
-    }
-
-    private fun setupWithNavController() {
-        navGraphIds = navId,
-        fragmentManager = supportFragmentManager,
-        containerId = R.id.navV,
-        intent = intent
+        navV.setupWithNavController(
+            navGraphIds = navId,
+            fragmentManager = supportFragmentManager,
+            containerId = R.id.navV,
+            intent = intent
+        )
     }
 }
