@@ -19,5 +19,4 @@ abstract class BaseFragment : Fragment() {
         val view = inflater.inflate(resID(),container,false)
         return view
     }
-
 }

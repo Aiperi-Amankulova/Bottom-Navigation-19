@@ -7,7 +7,7 @@ import com.example.bottomnavigation.R
 import com.example.bottomnavigation.Ui.RecyclerAdapter
 import kotlinx.android.synthetic.main.city_recycler.*
 
-class CityFragment: BaseFragment() {
+class CityFragment: BaseFragment(), InterfaceRecycler {
     override fun resID() = R.layout.city_recycler
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -28,4 +28,12 @@ class CityFragment: BaseFragment() {
         adapter.addingList(DataClass("Bandung" ,R.drawable.bandung, getString(R.string.bandung) ))
     }
 
+    override fun newPage(data: DataClass) {
+        TODO("Not yet implemented")
+    }
+//    override fun newPage(data: DataClass) {
+//        val directions = CityFragmentDer.actionCityFragmentToItemFragment(data)
+//        findNavController().navigate(directions)
+//    }
 }
+
